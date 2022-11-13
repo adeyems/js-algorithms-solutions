@@ -18,7 +18,8 @@ function isAnagram(string1, string2) {
         if (!frequencyCounter1[key]){
             return false;
         }
-        else frequencyCounter1[key] --;
+
+        frequencyCounter1[key] --;
     }
 
     return true;

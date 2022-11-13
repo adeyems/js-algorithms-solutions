@@ -1,3 +1,12 @@
+/**
+ * Number of unique values in a sorted array
+ * @param arr
+ * @returns {number}
+ *
+ * Implement a function called countUniqueValues, which accepts a sorted array,
+ * and counts the unique values in the array.
+ * There can be negative numbers in the array, but it will always be sorted
+ */
 
 function uniqueValuesInASortedArray(arr){
     if (!arr.length) return 0
