@@ -26,7 +26,7 @@ function maxSubarraySum(arr, num) {
     // and compare to the previous maxSubArraySum to find the new maxSubArraySum
 
     for (let i = num; i < arr.length; i++){
-        tempMaxSubArraySum = tempMaxSubArraySum + arr[i - num] + arr[num];
+        tempMaxSubArraySum = tempMaxSubArraySum - arr[i - num] + arr[num];
         maxSubArraySum = Math.max(maxSubArraySum, tempMaxSubArraySum);
     }
 
